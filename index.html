@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0;'>
+    <title ></title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+	<div class="main-container">
+		<div class="dropdown slider">
+
+			<div class="logo">
+				<img src="assets/wander-logo.png" class="primary-logo">
+			</div>
+
+			<div class="new-path-menu">
+				<h1 class="new-path-title">NEW PATH</h1>
+					<div class="search-box">
+						<input type="text" class="search-type js-start" placeholder="START" value="philadelphia">
+					</div>
+					<div class="search-box">
+						<input type="text" class="search-type js-end" placeholder="DESTINATION" value="pittsburgh">
+					</div>
+			</div>
+
+			<div class="category-selector">
+				<span class="category-type">SELECT CATEGORIES</span>
+				<div class="category-icons">
+					<img src="assets/ico/off-dining.png" class="icon js-icon" data-type="food meal_takeaway meal_delivery restaurant">
+					<img src="assets/ico/off-nightlife.png" class="icon js-icon" data-type="bar casino night_club liquor_store">
+					<img src="assets/ico/off-cafe.png" class="icon js-icon" data-type="cafe">
+					<img src="assets/ico/off-shopping.png" class="icon js-icon" data-type="clothing_store department_store jewelry_store shoe_store shopping_mall">
+					<img src="assets/ico/off-lodging.png" class="icon js-icon" data-type="lodging">
+					<img src="assets/ico/off-culture.png" class="icon js-icon" data-type="art_gallery museum church city_hall library mosque place_of_worship synagogue university school">
+					<img src="assets/ico/off-outdoors.png" class="icon js-icon" data-type="campground park cemetery rv_park">
+					<img src="assets/ico/off-exercise.png" class="icon js-icon" data-type="gym">
+					<img src="assets/ico/off-attraction.png" class="icon js-icon" data-type="amusement_park aquarium zoo movie_theater stadium">
+
+				</div>
+			</div>
+
+			<div class="wander-button js-submit">
+				<img src="assets/wander-white-submit.png" class="wander-button-text">
+			</div>
+
+			<div class="dropdown-arrow-block">
+				<img src="assets/dropdown-arrow.png" class="dropdown-arrow">
+			</div>
+
+
+
+			</div><!-- dropdown -->
+			<div id="map-bkgd">
+			</div>
+			<div class="loadScreen">
+				<div class="spinner">
+				<div class="bounce1"></div>
+				<div class="bounce2"></div>
+				<div class="bounce3"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+	<script src="http://maps.googleapis.com/maps/api/js?v=3&sensor=false&callback=GoogleInit&libraries=places"></script>
+	<script src="javascript/main3.js"></script>
+
+
+</body>
+</html>
